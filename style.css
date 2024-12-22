@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+body{
+    background: brown;
+    height: 300vh;
+
+}
+header{
+    position: fixed;
+    background-color: rgba(218, 165, 32, 0.61);
+    top:0;
+    left:0;
+    right: 0;
+    border-bottom: 1px solid black;
+
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    height: 80px;
+}
+header nav .logo{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: bolder;
+}
+header nav .logo span{
+    color: black;
+}
+header nav .links{
+    display: flex;
+
+}
+header nav .links li{
+    position: relative;
+    margin: 0 25px;
+    height: 80px;
+    line-height: 80px;
+}
+header nav .links li::after{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: black;
+
+}
+header nav .links li:hover::after{
+    width: 100%;
+    transition: 0.3s;
+}
+header nav .links li a{
+    color: antiquewhite;
+    font-size: 17px;
+
+
+}
+header nav .social-links a i{
+    color: rgba(0, 128, 0, 0.712);
+    font-size: 24px;
+    margin-left: 15px;
+
+}
+
+header nav .social-links a i:hover{
+    color: black;
+
+}
+
+.content{
+    position: relative;
+    margin-top: 100px;
+    padding: 30px;
+    
+}
+.content h2{
+    margin-top: 50px;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+.content p{
+    letter-spacing: 2px;
+    width: 350px;
+    padding: 20px;
+
+
+}
+.div{
+    background: url(image/38492627_1798913356871936_1631284765782966272_n.jpg);
+    width: 30%;
+    height: 50vh;
+    background-position: center 50%;
+    grid-template-columns: 50% 50
+    }
